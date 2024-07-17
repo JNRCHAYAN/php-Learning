@@ -97,11 +97,32 @@
     $myvar = (true xor true);
     echo var_dump($myvar);
     echo "<br>";
-
-    
-
     ?>
 
+<?php
+//Data type in php
+// 1.string
+// 2.Integer 
+// 3.Float
+// 4.Boolean
+// 5.Array 
+// 6.Object
+
+$var = "Thei is a string";
+echo  var_dump($var);
+echo "<br>";
+$var = 67;
+echo var_dump($var);
+echo "<br>";
+echo "<br>";
+$var = 67.2;
+echo var_dump($var);
+echo "<br>";
+echo "<br>";
+$var = true;
+echo var_dump($var);
+echo "<br>";
+?>
     
 </body>
 </html>
