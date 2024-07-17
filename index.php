@@ -12,7 +12,8 @@
     ?>
     <h1></h1>
     <?php
-    echo "use echo for show any output"
+    echo "use echo for show any output";
+    //Comment
     ?>
 </body>
 </html>
