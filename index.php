@@ -86,6 +86,20 @@
     echo  --$var2;
     echo "<br>";
     //  Logical Operator
+    $myvar = (true and true);
+    echo var_dump($myvar);
+    echo "<br>";
+    
+    $myvar = (true or false);
+    echo var_dump($myvar);
+    echo "<br>";
+
+    $myvar = (true xor true);
+    echo var_dump($myvar);
+    echo "<br>";
+
+    
+
     ?>
 
     
