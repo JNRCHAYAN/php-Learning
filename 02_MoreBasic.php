@@ -92,6 +92,12 @@
     echo "<br>";
  } while ($a < 3);
 
+ // for loop
+ for ($i=0; $i <10 ; $i++) { 
+    echo "Using for loop : ";
+    echo $i;
+    echo "<br>" ;
+ }
 
 ?>
 </div>
