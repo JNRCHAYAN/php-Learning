@@ -114,15 +114,24 @@ echo "<br>";
 $var = 67;
 echo var_dump($var);
 echo "<br>";
-echo "<br>";
 $var = 67.2;
 echo var_dump($var);
-echo "<br>";
 echo "<br>";
 $var = true;
 echo var_dump($var);
 echo "<br>";
+
+// constant value
+define("pi", 3.14);
+echo "Define pi value using define keyword ";
+echo pi;
+echo "<br>";
 ?>
-    
+
+
+
+
+   
+
 </body>
 </html>
