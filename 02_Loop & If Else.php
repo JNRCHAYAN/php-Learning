@@ -99,6 +99,14 @@
     echo "<br>" ;
  }
 
+
+ // for each loop
+
+ foreach ($language as $value) {
+    echo "<br> The value is: ";
+    echo $value;
+    echo "<br>";
+ }
 ?>
 </div>
 </body>
