@@ -32,10 +32,59 @@
     echo "The value of var1 + var2";
     echo "<br>";
     echo $var1 +$var2;
+    echo "<br>";
+    echo "The value of var1 - var2";
+    echo "<br>";
+    echo $var1 -$var2;
+    echo "<br>";
+    echo "The value of var1 * var2";
+    echo "<br>";
+    echo $var1 * $var2;
+    echo "<br>";
 
     //  Assignment Operator
+    $newvar = $var1;
+    echo "<br>";
+    echo " The Value of new variable = " ;
+    echo $newvar;
+    echo "<br>";
+    $newvar *= 2;
+    echo "<br>";
+    echo " The Value of new variable = " ;
+    echo $newvar;
+    echo "<br>";
+    // Others -=,+=,/=
+    
     //  Comparison Operator
+   // echo "<h1> Comparison Operator </h1";
+    echo "<br>";
+    echo "-> The value of 1==4 is ";
+    echo var_dump (1==4);
+    echo "<br>";
+
+    echo "<br>";
+    echo "-> The value of 1!=4 is ";
+    echo var_dump (1!=4);
+    echo "<br>";
+
+    echo "<br>";
+    echo "-> The value of 1>=4 is ";
+    echo var_dump (1>=4);
+    echo "<br>";
+
+    echo "<br>";
+    echo "-> The value of 1<=4 is ";
+    echo var_dump (1<=4);
+    echo "<br>";
     //  Increment/Decrement Operator
+    echo $var1++;
+    echo "<br>";
+    echo $var2--;
+    echo "<br>";
+    echo  ++$var1;
+    echo "<br>";
+    echo  --$var2;
+    echo "<br>";
     //  Logical Operator
     ?>
 
