@@ -6,8 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="c">
-        THis is my first website
-    </div>
+    <h1>My First Web Dev Code with PHP</h1>
+    <?php
+        echo "MY First php File";
+    ?>
+    <h1></h1>
+    <?php
+    echo "use echo for show any output"
+    ?>
 </body>
 </html>
