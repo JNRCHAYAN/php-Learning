@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Bangladesh Army University Science and Technology</h1>
+    <h2>Student Registration From</h2>
     <br>
     <form name="f1" method="post" action="publish.php">
         Student ID : <input type="text" name="Student_id" placeholder="Enter Student ID">
@@ -20,10 +21,10 @@
         <br>
         Department: 
         <select name="Department" >
-            <option value="CSE"> Computer Scicece & Engineering</option>
-            <option value="EEE"> Electronic Engineering</option>
-            <option value="SWE">Software Engineering</option>
-            <option value="IT">Information Technology</option>
+            <option value="Computer Scicece & Engineering"> Computer Scicece & Engineering</option>
+            <option value="Electronic Engineering"> Electronic Engineering</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Information Technology">Information Technology</option>
         </select>
         <br><br>
         Address :
@@ -35,5 +36,11 @@
         <input type="submit" name ="Submit" value="Submit">
         <br><br>
     </form>
+
+    <form name="f3" method="post" action="showData.php">
+        <input type="submit" name ="ViewData" value="ViewData">
+
+    </form>
+    
 </body>
 </html>
