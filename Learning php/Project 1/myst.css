@@ -19,6 +19,21 @@ body
    border-radius: 20px;
    text-align: center;
 }
+.mainsubmit
+{
+   position: absolute;
+   top: 50px;
+   left: 50px;
+   width: 500px;
+   height: 200px;
+   background: #007b6a;
+   border-radius: 20px;
+   text-align: left; 
+   padding: 20px;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .mainbody .mainfrom
 {
