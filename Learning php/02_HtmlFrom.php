@@ -34,7 +34,12 @@
         <input type="radio" name="Gender"  value="Male" > Male
         <input type="radio" name="Gender" value="Female" > Female
         <br><br>
-
+        <br>
+        <label for="Degrees">Degrees</label>
+        <input type="checkbox" name="BSC" value="BSC">BSC
+        <input type="checkbox" name="MSC" value="MSC">MSC
+        <input type="checkbox" name="Phd" value="Phd">Phd
+        <br>
         <br>
         <br>
 
