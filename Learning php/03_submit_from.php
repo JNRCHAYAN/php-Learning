@@ -42,7 +42,6 @@
     {
         $Phd = ""; 
     }
-
     
     echo "Cograculation" .$firstname ." for your promotion to  ".$position;
     echo" <br>";
