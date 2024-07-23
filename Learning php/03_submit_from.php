@@ -10,8 +10,16 @@
     <?php
     $firstname = $_POST['firstName'];
     $position = $_POST['position'];
+    $Address = $_POST['address'];
+    $Gender = $_POST['Gender'];
     
-    echo "Cograculation " .$firstname ." for your promotion to  ".$position;
+    echo "Cograculation" .$firstname ." for your promotion to  ".$position;
+    echo" <br>";
+    echo" <br>";
+    echo "Your Address : " . $Address;
+    echo" <br>";
+    echo" <br>";
+    echo "Your Gender : " . $Gender;
     ?>
 </body>
 </html>

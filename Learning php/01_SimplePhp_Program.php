@@ -18,7 +18,6 @@
     $date_and_time = date('Y-m-d h:g:s');
     echo" <br>";
     echo  $date_and_time;
- 
     ?>
 </body>
 </html>

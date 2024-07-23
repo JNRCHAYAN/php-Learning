@@ -24,6 +24,19 @@
         </select>
         <br>
         <br>
+        <label for="Address">Address</label>
+        <br>
+        <textarea name="address" id="address" cols="50" rows="7"></textarea>
+        <br>
+        <br>
+        <label for="Gender">Gender</label>
+        <br>
+        <input type="radio" name="Gender"  value="Male" > Male
+        <input type="radio" name="Gender" value="Female" > Female
+        <br><br>
+
+        <br>
+        <br>
 
         <input type="submit" name="submit" id="submit" value="submit information">
         <br>
