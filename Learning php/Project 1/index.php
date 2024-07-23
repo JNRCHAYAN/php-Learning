@@ -55,6 +55,30 @@
         </form>
         </div>
     </div>
+
+
+
+    <div class="claculator">
+        <h1>Mortgate claculator</h1> 
+        <p>Please fill details to clacule mortgate</p>
+        <div class="mainfrom">
+        <form action="calculator.php" method="post">
+                <div>
+                    <label for="Amount">Amount</label>
+                    <br>
+                    <input type="number" name="Amount" id="Amount">
+                </div>
+                <div>
+                    <label for="Interest Rate">Interest Rate</label>
+                    <br>
+                    <input type="number" name="Interest_Rate" id="Interest Rate">
+                </div>
+                <div>
+                 <button class="btn" value="submit">Calculate Profit</button>
+                </div>
+        </form>
+        </div>
+    </div>
    
 </body>
 </html>
