@@ -44,8 +44,7 @@ if(!$con)
 else
 {
     echo "Conniction Successfully";
-}
-echo "</br>";
+}echo "</br>";
 
 $r ='SELECT *From student';
 $result = $con->query($r);
