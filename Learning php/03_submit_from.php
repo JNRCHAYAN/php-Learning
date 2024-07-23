@@ -9,7 +9,9 @@
     <h3>Successfully Submit</h3>
     <?php
     $firstname = $_POST['firstName'];
-    echo "Cograculation " .$firstname;
+    $position = $_POST['position'];
+    
+    echo "Cograculation " .$firstname ." for your promotion to  ".$position;
     ?>
 </body>
 </html>

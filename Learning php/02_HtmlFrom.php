@@ -15,6 +15,16 @@
         <input type="text" name="firstName" size="30">
         <br>
         <br>
+        <label for="position">Position</label>
+        <br>
+        <select name="position" id="postion">
+            <option value="Administration">Administration</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Staff">Staff</option>
+        </select>
+        <br>
+        <br>
+
         <input type="submit" name="submit" id="submit" value="submit information">
         <br>
 
