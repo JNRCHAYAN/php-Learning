@@ -22,7 +22,7 @@
            <th>Amount Entered</th>
         </tr>
     <?php
-    echo "<tr><td>The Number of apples</td><td>$apples</td></tr>\n";
+    echo "<tr><td>The Number of apples</td><td>$apples</td></tr>";
     echo "<tr><td>The Number of pears</td><td>$pears</td></tr>";
     echo "<tr><td>The total number of apples</td><td>$totalf</td></tr>";
     echo "<tr><td>The total difference Number of apples</td><td>$diff</td></tr>";
