@@ -22,17 +22,19 @@
                     <br>
                     <input type="text" name="LastName" id="LastName">
                 </div>
-                <div class="contact">
-                    <label for="contact information">Contact Information</label>
-                    <input type="radio" name="phone" id="phone"> Phone 
-                    <input type="radio" name="phone" id="email"> Email 
-                  </div>
-                   
-                    <div>
-                        <input type="text" name="contact " id="contact">
-                    </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" >
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="number" name="number" >
+                </div>
+                  
                      <div>
-                        <label for="contact information">City Where you live</label>
+                        <label for="city">City Where you live</label>
                         <br>
                         <select name="city" id="city">
                             <option value="Saidpur">Saidpur</option>
