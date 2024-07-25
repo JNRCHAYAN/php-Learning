@@ -7,5 +7,12 @@
 </head>
 <body>
     
+    <?php
+    $doc_Root = $_SERVER['DOCUMENT_ROOT'];
+
+    
+    $filename = $doc_Root.''
+    ?>
+
 </body>
 </html>
