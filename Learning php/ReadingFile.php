@@ -8,10 +8,22 @@
 <body>
     
     <?php
-    $doc_Root = $_SERVER['DOCUMENT_ROOT'];
+    $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
 
-    
-    $filename = $doc_Root.''
+    $filename =  $DOCUMENT_ROOT. 'data/'.'citiy.txt';
+
+    $lines_in_file = count(file($filename));
+
+    $fp = fopen($filename, 'r'); // Opems the file for reading
+
+    for($ii=1; $ii<= $lines_in_file; $ii++)
+    {
+        $line = fgets($fp);
+        $city = trim($line);
+        print 'city: '.$city. '<br>';
+    }
+    fclose($fp);
+
     ?>
 
 </body>
