@@ -10,7 +10,7 @@
     <?php
     $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
 
-    $filename =  $DOCUMENT_ROOT. 'data/'.'citiy.txt';
+    $filename =  $DOCUMENT_ROOT . 'data/'.'citiy.txt';
 
     $lines_in_file = count(file($filename));
 
