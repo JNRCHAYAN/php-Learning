@@ -13,11 +13,11 @@
             <p>It's free and only takes a miunte</p>
         </div>
        
-        <form action="09_Position.html" >
+        <form action="#" >
             <div>
-                <label for="Firstname">First Name</label>
+                <label for="First_name">First Name</label>
                 <br>
-                <input type="text" name="text" id="text">
+                <input type="text" name="First_name" id="text">
             </div>
             <div>
                 <label for="LastName">Last Name</label>
@@ -41,7 +41,7 @@
             </div>
             <br>
             <div>
-                <button class="btn">Sign Up</button>
+                <input type="submit" class="btn" name="susbmit"  value="Register"/> 
             </div>
         </form>
         <p>By Clicking the Sign Up button.You agree to our <a href="#">Terms & condition  </a>and <a href="#">Privacy Policy</a> 
@@ -52,9 +52,42 @@
     </div>
 </body>
 </html>
-
 <?php
 
 include '02_Connection.php';
+
+if(isset($_POST['submit']))
+{
+    $fname = $_POST['First_name'];
+    $lname = $_POST['LastName'];
+    $Emal = $_POST['Email'];
+    $pssword = $_POST['password'];
+    $cnfirmPassword = $_POST['confirmPassword'];
+
+   $insertdb = " INSERT INTO  `myfrom`.`userlist` (`FirstName`, `LastName`, `Email`, `Password`, `ConfirmPassword`) 
+   VALUES ('$fname','$lname','$Emal',' $pssword','$cnfirmPassword') " ;
+
+  $res = mysqli_query( $con , $insertdb);
+
+}
+
+if($res)
+{
+    ?>
+    <script>
+        alert('Data Store on DBMS');
+    </script>
+    <?php
+}
+
+else
+{
+
+    ?>
+    <script>
+        alert('**** Data Not Store on DBMS');
+    </script>
+    <?php
+}
 
 ?>
