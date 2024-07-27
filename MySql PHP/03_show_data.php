@@ -10,6 +10,9 @@
 <body>
     <div>
         <h1>List of the user</h1>
+        <h2 ><a class="back" href="02_FromInput.php">Back </a></h2>
+      
+        
           <div>
             <table>
                 <thead><tr>
@@ -18,7 +21,7 @@
                     <th>Email </th>
                     <th>Age </th>
                     <th>Password</th>
-                    <th>Operation</th>
+                    <th colspan="2">Operation</th>
                 </tr>
             </thead>
             <tbody>
@@ -50,7 +53,7 @@
                         <td><i class="fa fa-trash" aria-hidden="true"></i></td>
                      </tr>
                      <?php
-                     
+
                     }
                     ?>
                
