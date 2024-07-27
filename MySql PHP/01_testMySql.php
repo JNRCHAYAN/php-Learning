@@ -4,7 +4,7 @@
 $link = mysqli_connect ('localhost','root','');
 if(!$link)
 {
-    die('Could not connect mysql' .mysql_error());
+    die('Could not connect mysql' .mysqli_error());
 }
 echo 'connection ok';
 
