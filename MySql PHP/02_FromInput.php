@@ -52,3 +52,9 @@
     </div>
 </body>
 </html>
+
+<?php
+
+include '02_Connection.php';
+
+?>
