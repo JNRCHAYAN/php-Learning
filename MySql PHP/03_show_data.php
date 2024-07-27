@@ -42,15 +42,16 @@
                         // echo $res['namef'] . "<br>";
                         // echo $res['email'] . "<br>"; 
                       ?>      
-
                         <tr>
                         <td> <?php echo $res['namef'] ?></td>
                         <td> <?php echo $res['namel'] ?></td>
                         <td> <?php echo $res['email'] ?></td>
                         <td> <?php echo $res['age'] ?></td>
                         <td> <?php echo $res['pass'] ?></td>
-                        <td><i class="fa fa-edit" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                        <td>   <a href="#" data-toggle="tooltip" data-placement="top" title="Update">
+                            <i class="fa fa-edit" aria-hidden="true"></i>  </a></td>
+                        <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Delete">
+                        <i class="fa fa-trash" aria-hidden="true"></i>  </a> </td>
                      </tr>
                      <?php
 
