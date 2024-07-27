@@ -1,34 +1,65 @@
-<?php
- $server ="localhost";
- $username = "root";
- $password = "";
- $con = mysqli_connect ($server,$username,$password);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>List of the user</h1>
+          <div>
+            <table>
+                <thead><tr>
+                    <th>Fast Name</th>
+                    <th>Last Name</th>
+                    <th>Email </th>
+                    <th>Age </th>
+                    <th>Password</th>
+                    <th>Operation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
 
- if(!$con)
- {
-     die("Connect to this database failed due to". mysqli_connect_error());
- }
+                    include '02_Connection.php';
 
- $fname = $_POST['First_name'];
- $lname = $_POST['LastName'];
- $Emal = $_POST['Email'];
- $pssword = $_POST['password'];
- $cnfirmPassword = $_POST['confirmPassword'];
+                    $selectquery = "Select * from st";
+
+                    $qery = mysqli_query( $con , $selectquery);
+
+                    // $num =  mysqli_num_rows($qery);
+                    // $res = mysqli_fetch_array($qery);  
+                    // echo $res[1];  
+
+                    while ($res = mysqli_fetch_array($qery))
+                    {
+                        // echo $res['namef'] . "<br>";
+                        // echo $res['email'] . "<br>"; 
+                      ?>      
+
+                        <tr>
+                        <td> <?php echo $res['namef'] ?></td>
+                        <td> <?php echo $res['namel'] ?></td>
+                        <td> <?php echo $res['email'] ?></td>
+                        <td> <?php echo $res['age'] ?></td>
+                        <td> <?php echo $res['pass'] ?></td>
+                        <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                     </tr>
+                     <?php
+                     
+                    }
+                    ?>
+               
+            </tbody>
+            </table>
+          </div>  
+
+    </div>
 
 
-$sql =  " INSERT INTO userlist(FirstName,LastName,Email,Password,ConfirmPassword) 
-   VALUES ('$fname','$lname','$Emal',' $pssword','$cnfirmPassword') " ;
-
-
-    if($con->query($sql)==true)
-    {
-        $insert = true;
-        echo "Successfully Inserted";
-    }
-    else
-    {
-        echo "Error : $sql <br> $con->error";
-    }
-
-    //$con ->close();
-    ?>
+</body>
+</html>
