@@ -43,14 +43,16 @@
                         // echo $res['email'] . "<br>"; 
                       ?>      
                         <tr>
-                        <td> <?php echo $res['namef'] ?></td>
-                        <td> <?php echo $res['namel'] ?></td>
-                        <td> <?php echo $res['email'] ?></td>
-                        <td> <?php echo $res['age'] ?></td>
-                        <td> <?php echo $res['pass'] ?></td>
-                        <td>   <a href="#" data-toggle="tooltip" data-placement="top" title="Update">
+                        <td> <?php echo $res['namef']; ?></td>
+                        <td> <?php echo $res['namel']; ?></td>
+                        <td> <?php echo $res['email']; ?></td>
+                        <td> <?php echo $res['age'] ;?></td>
+                        <td> <?php echo $res['pass']; ?></td>
+                        <!-- <td>   <a href="04_Edit_From.php" data-toggle="tooltip" data-placement="bottom" title="Update">
+                            <i class="fa fa-edit" aria-hidden="true"></i>  </a></td> -->
+                        <td>   <a href="04_Edit_From.php?age=<?php echo $res['age'] ?>" data-toggle="tooltip" data-placement="bottom" title="Update">
                             <i class="fa fa-edit" aria-hidden="true"></i>  </a></td>
-                        <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Delete">
+                        <td> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete">
                         <i class="fa fa-trash" aria-hidden="true"></i>  </a> </td>
                      </tr>
                      <?php
@@ -64,6 +66,11 @@
 
     </div>
 
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 </body>
 </html>
