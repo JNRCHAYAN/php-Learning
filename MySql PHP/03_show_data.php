@@ -52,7 +52,7 @@
                             <i class="fa fa-edit" aria-hidden="true"></i>  </a></td> -->
                         <td>   <a href="04_Edit_From.php?age=<?php echo $res['age'] ?>" data-toggle="tooltip" data-placement="bottom" title="Update">
                             <i class="fa fa-edit" aria-hidden="true"></i>  </a></td>
-                        <td> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <td> <a href="05_Delete.php?age=<?php echo $res['age'] ?> " data-toggle="tooltip" data-placement="bottom" title="Delete">
                         <i class="fa fa-trash" aria-hidden="true"></i>  </a> </td>
                      </tr>
                      <?php
