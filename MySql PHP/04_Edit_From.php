@@ -26,8 +26,11 @@
                 $arrdata = mysqli_fetch_array($showdata);  
 
 
-                     if(isset($_POST['submit']))
+                     if(isset($_POST['update']))
                         {
+                            $ag = $_GET['age'];
+
+
                             $fname = $_POST['First_name'];
                             $lname = $_POST['LastName'];
                             $age = $_POST['age'];
@@ -36,8 +39,11 @@
                             $cnfirmPassword = $_POST['confirmPassword'];
                             
 
-                        $setvalue_DB = " INSERT INTO `st` (`namef`, `namel`, `age`, `email`, `pass`) 
-                        VALUES ('$fname', '$lname', '$age', '$Email', '$password');" ;
+                        // $setvalue_DB = " INSERT INTO `st` (`namef`, `namel`, `age`, `email`, `pass`) 
+                        // VALUES ('$fname', '$lname', '$age', '$Email', '$password');" ;
+
+                        $setvalue_DB = "UPDATE `st` SET `namef`='$fname',`namel`='$lname',`age`='$age',`email`='$Email',`pass`='$password'
+                         WHERE `st`.`age` = '$ag';";
 
                         $res = mysqli_query( $con , $setvalue_DB);
                         if($res)
@@ -96,7 +102,7 @@
             </div>
             <br>
             <div>
-                <input type="submit" class="btn" name="submit"  value="Register"/> 
+                <input type="submit" class="btn" name="update"  value="Update"/> 
             </div>
         </form>
         <p>By Clicking the Sign Up button.You agree to our <a href="#">Terms & condition  </a>and <a href="#">Privacy Policy</a> 
@@ -107,3 +113,4 @@
     </div>
 </body>
 </html>
+
