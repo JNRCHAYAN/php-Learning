@@ -36,7 +36,6 @@
                     // $num =  mysqli_num_rows($qery);
                     // $res = mysqli_fetch_array($qery);  
                     // echo $res[1];  
-
                     while ($res = mysqli_fetch_array($qery))
                     {
                         // echo $res['namef'] . "<br>";
