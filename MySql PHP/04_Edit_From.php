@@ -16,7 +16,7 @@
 
                 <?php
                 include '02_Connection.php';
-
+        $agee = $_GET['age'];
                 $agee = $_GET['age'];
 
                 $showQuree = "select * from st where age={$agee}";

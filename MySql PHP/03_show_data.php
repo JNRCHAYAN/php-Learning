@@ -11,8 +11,6 @@
     <div>
         <h1>List of the user</h1>
         <h2 ><a class="back" href="02_FromInput.php">Back </a></h2>
-      
-        
           <div>
             <table>
                 <thead><tr>
